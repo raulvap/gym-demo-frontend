@@ -1,0 +1,64 @@
+@import "../../../scss/index.scss";
+
+.servicio-list {
+   &__header {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .ant-btn-primary {
+         margin-left: 15px;
+      }
+
+      .buttons-comunidad {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+      }
+   }
+}
+
+@media screen and (max-width: 1030px) {
+   .servicio-list {
+      &__header {
+         margin-bottom: 10px;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+
+         .buttons-comunidad {
+            margin-left: 10px;
+            display: flex;
+            flex-direction: column;
+         }
+
+         .ant-btn-primary {
+            margin: 10px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 380px) {
+   .servicio-list {
+      &__header {
+         margin-bottom: 10px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+         text-align: center;
+
+         .buttons-comunidad {
+            margin-left: 0px;
+            display: flex;
+            flex-direction: column;
+         }
+
+         .ant-btn-primary {
+            margin: 10px;
+         }
+      }
+   }
+}

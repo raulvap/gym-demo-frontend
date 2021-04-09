@@ -1,0 +1,93 @@
+@import "../../../scss/index.scss";
+
+.menu-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+
+  button {
+    color: #fff;
+
+    &:hover {
+      color: $primary-color-hover;
+    }
+    &:focus,
+    &:active {
+      color: #fff;
+    }
+  }
+
+  &__left {
+    margin-left: 20px;
+
+    &-logo {
+      height: 60px;
+
+      padding: 5px 10px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    // position: absolute;
+    // right: 0;
+    margin-right: 25px;
+
+    h3 {
+      color: #fff;
+      margin: 0;
+      margin-right: 20px;
+      height: 100%;
+    }
+
+    .ant-btn {
+      font-size: 1.4rem;
+
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .menu-top {
+    &__left {
+      margin-left: 0px;
+      padding-left: 5px;
+
+      &-logo {
+        max-width: 120px;
+        // max-height: 200px;
+        padding: 5px;
+      }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      // position: absolute;
+      // right: 0;
+      margin-right: 0px;
+      padding-right: 5px;
+
+      h3 {
+        color: #fff;
+        margin: 0;
+
+        height: 100%;
+        font-size: 12px;
+      }
+
+      .ant-btn {
+        font-size: 1.4rem;
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+@import "../../../scss/index.scss";
+
+.admin-home {
+  &__title {
+    text-align: center;
+
+    h1 {
+      font-weight: bold;
+    }
+
+    p {
+      color: $font-grey;
+      margin: 0;
+    }
+  }
+
+  &__eclesia {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+
+    h2 {
+      font-size: 2rem;
+      color: $font-grey-dark;
+      margin: 0;
+    }
+    h4,
+    p {
+      margin: 0;
+      color: $font-grey;
+    }
+  }
+
+  .content {
+    margin: 30px 0;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    &__cards {
+      width: 100%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      margin-right: 30px;
+
+      h3 {
+        text-align: center;
+        color: $font-grey-dark;
+      }
+
+      .anticon {
+        font-size: 32px;
+        color: $primary-color-hover;
+      }
+
+      .ant-list-item-meta-description {
+        color: $font-grey-dark;
+      }
+    }
+
+    &__calendar {
+      width: 40%;
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .admin-home {
+    .content {
+      margin: 30px 0;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &__cards {
+        width: 100%;
+        padding: 20px;
+
+        margin-right: 0px;
+      }
+
+      &__calendar {
+        margin: 30px 0;
+        width: 100%;
+        padding: 10px;
+      }
+    }
+  }
+}

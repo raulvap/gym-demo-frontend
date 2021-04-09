@@ -1,0 +1,89 @@
+@import "../../../../scss/index.scss";
+
+.lista-registros {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    .lista-registos-buttons {
+      .ant-btn {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &__table {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+
+    table {
+      width: 100%;
+      text-align: center;
+    }
+
+    th,
+    td {
+      padding: 5px;
+      border-bottom: 0.5px solid $font-grey-light;
+    }
+    tr:hover {
+      background-color: #d4e6f1;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+      &:hover {
+        background-color: #d4e6f1;
+      }
+    }
+    th {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .lista-registros {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px;
+
+      .lista-registos-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        .ant-btn {
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .lista-registros {
+    &__header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 10px;
+
+      .lista-registos-buttons {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        .ant-btn {
+          margin: 10px 0px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

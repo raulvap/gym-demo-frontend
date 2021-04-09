@@ -1,0 +1,39 @@
+@import "../../../../scss/index.scss";
+
+.messages-list {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+
+  &__message {
+    padding: 10px;
+
+    .ant-list-item-meta {
+      align-items: center;
+
+      svg {
+        font-size: 1.5rem;
+        color: $font-grey;
+      }
+    }
+
+    .ant-list-item-meta-content {
+      padding: 5px;
+
+      p {
+        margin: 3px 0 0 0;
+      }
+
+      .ant-list-item-meta-title {
+        color: $font-grey-dark;
+      }
+    }
+  }
+}
+
+.pagination-messages {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;700&display=swap");
+
+$defaultFontSize: 16px;
+$background-color-general: #eaecee;
+
+//these don't change!!
+// $primary-color: #224870;
+$primary-color: #4a235a;
+// $primary-color: rgba(14, 40, 67, 1);
+$primary-color-hover: #0269af;
+$primary-color-light: #00aece;
+$primary-color-dark: #002c57;
+
+//Generic Gradient
+$color-1: #00c9b7;
+$color-2: #00b9d3;
+$color-3: #0094cc;
+
+$color-4: #0099a4;
+$color-5: #007096;
+$color-6: #073a68;
+
+$footer-color: #073a68;
+$menu-color: #224870;
+
+$font-light: #f5f5f5;
+$font-grey-light: #e8e8e8;
+$font-grey: #95a5a6;
+$font-grey-dark: #515a5a;
+$font-dark-light: #2c3e50;
+$font-dark: #17202a;
+
+$border-light: #f5f5f5;
+$border-grey-light: #e8e8e8;
+$border-grey: #95a5a6;
+$border-grey-dark: #515a5a;
+$border-dark-light: #2c3e50;
+$border-dark: #17202a;
+
+$background-light: #f5f5f5;
+$background-grey-light: #f8f9f9;
+$background-grey: #e8e8e8;
+$background-grey-dark: #515a5a;
+$background-dark-light: #2c3e50;
+$background-dark: #17202a;
+$background-success: #84b84c1f;
+$background-error: #ff00001f;
+$background-dark-web: #327d89;
+$background-dark-light-web: #2c3e50;
+
+$success: #84b84c;
+$error: #f00;
+
+// Social Color
+$youtube: #cd201f;
+$twitter: #1da1f2;
+$facebook: #3b5998;
+$facebook21: #1778f2;
+$linkedin: #0077b5;
+$instagram: #833ab4;
+
+// Responsive down size
+$media-breackpoint-down-xs: 413.98px;
+$media-breackpoint-down-sm: 573.98px;
+$media-breackpoint-down-md: 767.98px;
+$media-breackpoint-down-lg: 991.98px;
+$media-breackpoint-down-xl: 1199.98px;
+
+// Responsive up size
+$media-breackpoint-up-xs: 320px;
+$media-breackpoint-up-sm: 576px;
+$media-breackpoint-up-md: 768px;
+$media-breackpoint-up-lg: 992px;
+$media-breackpoint-up-xl: 1200px;

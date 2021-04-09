@@ -1,0 +1,116 @@
+@import "../../../scss/index.scss";
+
+.registro-misa {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 50px;
+
+  &__info {
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    h3 {
+      text-align: center;
+    }
+    p {
+      text-justify: inter-word;
+    }
+  }
+
+  &__especiales {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.2);
+
+    padding: 10px;
+
+    .lista-misas-especiales {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      border-bottom: 1px solid $font-grey-dark;
+    }
+  }
+
+  &__form {
+    // margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+
+    .ant-form-item-label {
+      text-align: center;
+    }
+    .ant-space-vertical {
+      width: 100%;
+    }
+    .ant-picker {
+      width: 100%;
+    }
+
+    .ant-select {
+      width: 100%;
+    }
+
+    .ant-btn {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .registro-misa {
+    padding: 20px 50px;
+
+    &__form {
+      .ant-form-item-label {
+        display: flex;
+        align-items: center;
+        text-align: right;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .registro-misa {
+    padding: 20px 15%;
+
+    &__form {
+      padding: 30px;
+      margin: 0 10%;
+    }
+
+    &__especiales {
+      padding: 30px;
+      margin-bottom: 60px;
+
+      .lista-misas-especiales {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 15px;
+
+        // .ant-list-item-action {
+        //   margin-left: 0;
+        // }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1320px) {
+  .registro-misa {
+    padding: 20px 15%;
+
+    &__form {
+      padding: 30px;
+      margin: 0 20%;
+    }
+  }
+}

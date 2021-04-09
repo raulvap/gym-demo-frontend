@@ -1,0 +1,106 @@
+@import "../../../scss/index.scss";
+
+.home-sacramentos {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+
+  a {
+    position: relative;
+    width: 40vw;
+    min-width: 150px;
+    height: 20vh;
+
+    border-radius: 10px;
+    margin: 8px;
+
+    h3 {
+      margin-top: 5px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    transition: all 0.5s;
+    &:hover {
+      padding: 10px;
+      font-size: 1rem;
+      opacity: 0.7;
+      transition: all 0.5s;
+
+      -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+      box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+      // padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+
+      &::after {
+        opacity: 1;
+        transition: all 2s;
+      }
+    }
+  }
+}
+
+.bautismo {
+  background-image: url("../../../assets/img/jpg/sacramentos/bautismo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.confirmacion {
+  background-image: url("../../../assets/img/jpg/sacramentos/confirmacion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.comunion {
+  background-image: url("../../../assets/img/jpg/sacramentos/comunion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.boda {
+  background-image: url("../../../assets/img/jpg/sacramentos/boda.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.uncion {
+  background-image: url("../../../assets/img/jpg/sacramentos/uncion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.confesion {
+  background-image: url("../../../assets/img/jpg/sacramentos/confesion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (min-width: 700px) {
+  .home-sacramentos {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    a {
+      width: 20vw;
+      min-width: 150px;
+      height: 20vh;
+      margin: 10px;
+    }
+  }
+}
+
+//   &__confesion {
+//     background-image: url("../../../assets/img/jpg/sacramentos/confesion.jpg");
+//     background-repeat: no-repeat;
+//     background-size: 125%, auto;
+//     background-position: bottom center;
+//   }
+// }

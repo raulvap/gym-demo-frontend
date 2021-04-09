@@ -1,0 +1,232 @@
+@import "../../../scss/index.scss";
+
+.cover {
+  //   position: relative;
+
+  height: 300px;
+  width: auto;
+  background-color: $background-dark;
+  margin-bottom: 20px;
+}
+
+.subtitulo {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.calendario {
+  padding: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  // --- Evento Card: ---
+  &__evento {
+    max-width: 320px;
+
+    margin: 30px 0px;
+    padding: 0 10px;
+
+    border-radius: 10px;
+    background-color: #fff;
+    -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      max-width: 290px;
+      max-height: 200px;
+      border-radius: 0 0 20px 20px;
+      align-self: center;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+
+      .date {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $primary-color-dark;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+      p {
+        margin: 0;
+      }
+
+      h4 {
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        font-weight: normal;
+
+        svg {
+          font-size: 1.2rem;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    a {
+      display: flex;
+      flex-wrap: nowrap;
+
+      justify-content: center;
+      font-size: 1rem;
+
+      width: 80%;
+      height: auto;
+      margin: 25px auto 20px auto;
+      // width: 70vw;
+
+      text-decoration: none;
+      text-align: center;
+
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+
+      background: $primary-color-hover;
+      //   height: 200px;
+      //   width: 500px;
+      padding: 10px;
+      color: $font-light;
+
+      transition: all 0.6s;
+
+      svg {
+        margin-right: 5px;
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        background: $primary-color-hover;
+        transition: all 0.6s;
+        color: #fff;
+        -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+        box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+
+        &::after {
+          opacity: 1;
+          transition: all 1s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .cover {
+  }
+
+  .subtitulo {
+    padding: 20px 15%;
+  }
+
+  .calendario {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    // --- Evento Card: ---
+    &__evento {
+      max-width: 345px;
+
+      margin: 30px 0px;
+      padding: 0 10px;
+
+      position: relative;
+      display: flex;
+      flex-direction: column;
+
+      img {
+      }
+
+      .info {
+        padding: 0 20px !important;
+        .date {
+        }
+
+        h3 {
+        }
+
+        h4 {
+          svg {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .cover {
+    height: 400px;
+  }
+
+  .subtitulo {
+    padding: 20px 20%;
+  }
+
+  .calendario {
+    padding: 0 15%;
+
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // --- Evento Card: ---
+    &__evento {
+      max-width: 100%;
+
+      margin: 40px 0px;
+      padding: 10px;
+
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+
+      img {
+        max-width: 280px;
+        max-height: 190px;
+        border-radius: 10px;
+      }
+
+      .info {
+        width: 100%;
+        // pa
+        .date {
+        }
+
+        h3 {
+        }
+
+        h4 {
+          svg {
+          }
+        }
+      }
+
+      a {
+        width: 50%;
+        max-width: 300px;
+        height: auto;
+        margin: 25px 0 20px 0;
+        padding: 5px;
+      }
+    }
+  }
+}

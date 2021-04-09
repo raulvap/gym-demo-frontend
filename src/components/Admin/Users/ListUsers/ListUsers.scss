@@ -1,0 +1,86 @@
+@import "../../../../scss/index.scss";
+
+.list-users {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &-switch {
+      display: flex;
+      align-items: center;
+
+      > button {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  .users-active {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+    transition: all 0.6s;
+
+    .ant-list-item-meta {
+      display: flex;
+      align-items: center;
+      transition: all 0.6s;
+    }
+
+    .ant-list-item-action {
+      transition: all 0.6s;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .list-users {
+    &__header {
+      display: flex;
+      flex-direction: column-reverse;
+
+      margin-bottom: 20px;
+
+      &-switch {
+        align-items: center;
+        margin: 30px 0 10px 0;
+        > button {
+          margin-right: 5px;
+        }
+      }
+
+      .ant-btn {
+        white-space: normal;
+        display: unset;
+        width: 80px;
+        height: 35px;
+
+        > .anticon + span {
+          display: none;
+        }
+      }
+    }
+
+    .users-active {
+      padding: 5px 0 5px 15px;
+
+      .ant-list-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .ant-list-item-meta {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .ant-list-item-action {
+        margin: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../../../scss/index.scss";
+
+.copyright-footer {
+   &__eclesia {
+      color: #515a5a !important;
+
+      a {
+         text-decoration: none;
+         transition: all 0.6s;
+
+         &:hover {
+            color: #fff !important;
+            transition: all 0.5s;
+         }
+      }
+   }
+
+   &__links {
+      white-space: nowrap;
+
+      a {
+         text-decoration: none;
+
+         white-space: nowrap;
+      }
+   }
+}

@@ -1,0 +1,262 @@
+@import "../../../scss/index.scss";
+
+.titulo-servicio {
+  margin: 5px auto;
+  text-align: center;
+  color: $font-grey-dark;
+  font-size: 1.3rem;
+}
+.servicios {
+  width: 100%;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__menu {
+    width: 100%;
+    margin-bottom: 30px;
+
+    .ant-collapse-borderless {
+      border-radius: 5px;
+    }
+
+    .ant-list-items {
+      display: flex;
+      flex-direction: column;
+
+      // .ant-collapse-header {
+      //   font-weight: bold;
+      // }
+
+      a {
+        text-decoration: none;
+        color: $font-grey-dark;
+        padding: 5px 0px 5px 40px;
+        width: 100%;
+
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  &__contenido {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+    width: 100%;
+
+    margin-bottom: 40px;
+
+    img {
+      max-height: 330px;
+      max-width: 320px;
+
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    p {
+      margin: 0;
+    }
+    h4 {
+      font-size: 1rem;
+      color: $font-grey-dark;
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 5px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.scrollTop {
+  position: fixed;
+  width: 100%;
+  bottom: 70px;
+  right: 10%;
+  align-items: center;
+  height: 20px;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 1;
+}
+
+.scrollTop:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .titulo-servicio {
+    margin: 10px auto;
+    text-align: center;
+
+    font-size: 1.3rem;
+  }
+  .servicios {
+    width: 100%;
+    padding: 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__menu {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    &__contenido {
+      padding: 20px;
+      width: 100%;
+
+      margin-bottom: 40px;
+
+      img {
+        max-height: 400px;
+        max-width: 660px;
+
+        margin-bottom: 10px;
+      }
+      h2 {
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 30px;
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .titulo-servicio {
+    margin: 10px auto;
+    text-align: center;
+
+    font-size: 1.3rem;
+  }
+  .servicios {
+    width: 100%;
+    padding: 20px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: unset;
+    overflow: auto;
+
+    &__menu {
+      width: 100%;
+      margin-bottom: 0px;
+      margin-right: 20px;
+      position: -webkit-sticky; /* for Safari */
+      position: sticky;
+      top: 100px;
+      align-self: flex-start; /* <-- this is the fix */
+    }
+
+    &__contenido {
+      padding: 20px;
+      width: 100%;
+
+      margin-bottom: 40px;
+
+      img {
+        max-height: 400px;
+        max-width: 660px;
+
+        margin-bottom: 10px;
+      }
+      h2 {
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 30px;
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1060px) {
+  .titulo-servicio {
+    margin: 10px auto;
+    text-align: center;
+
+    font-size: 1.3rem;
+  }
+  .servicios {
+    width: 100%;
+    padding: 20px 15%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: unset;
+    overflow: auto;
+
+    &__menu {
+      width: 100%;
+      margin-bottom: 0px;
+      margin-right: 20px;
+      position: -webkit-sticky; /* for Safari */
+      position: sticky;
+      top: 0;
+      align-self: flex-start; /* <-- this is the fix */
+    }
+
+    &__contenido {
+      padding: 20px;
+      width: 50vw;
+
+      margin-bottom: 40px;
+
+      img {
+        max-height: 400px;
+        max-width: 660px;
+
+        margin-bottom: 10px;
+      }
+      h2 {
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 30px;
+
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

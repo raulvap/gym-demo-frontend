@@ -1,0 +1,66 @@
+@import "../../../scss/index.scss";
+
+.admin-sider {
+  position: relative;
+  z-index: 10;
+  min-height: 110vh;
+  left: 0;
+  padding-top: 65px;
+
+  overflow: auto;
+  // background-color: $color-6;
+  background: rgba(14, 40, 67, 1) 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 72, 112, 1) 58%,
+    rgba(14, 40, 67, 1) 100%
+  );
+
+  .ant-menu {
+    background-color: #224870;
+    border: none;
+  }
+
+  .ant-menu-item {
+    transition: all 0.6s;
+    max-width: 238px;
+
+    a {
+      transition: all 0.4s;
+      font-weight: 400;
+      font-size: 14px;
+      color: #fff !important;
+    }
+
+    &:hover {
+      transition: all 0.4s;
+
+      background-color: $primary-color-hover;
+      color: #fff;
+    }
+  }
+  .ant-menu-item-selected {
+    background-color: #1890ff !important;
+  }
+}
+
+.contacto-eclesia {
+  position: absolute;
+  bottom: 10px;
+  // margin-top: 40px;
+
+  color: $font-grey;
+  font-size: 12px;
+  padding: 0px 20px;
+
+  display: flex;
+  flex-direction: column;
+  a {
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .admin-sider {
+  }
+}

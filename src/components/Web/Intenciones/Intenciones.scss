@@ -1,0 +1,190 @@
+@import "../../../scss/index.scss";
+
+.intenciones-web {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 0 30px;
+
+  img {
+    max-width: 300px;
+    border-radius: 200px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    padding: 8px 50px;
+    margin: 20px 0px;
+
+    cursor: pointer;
+
+    border-radius: 10px;
+
+    background: $primary-color-hover;
+    //   height: 200px;
+    //   width: 500px;
+    font-size: 20px;
+    color: $font-grey-light;
+    box-shadow: 0px 1px 4px rgba(11, 110, 166, 0.65);
+
+    transition: all 1s;
+
+    svg {
+      transition: all 0.2s ease;
+      margin-right: 5px;
+    }
+
+    &:hover {
+      background: $primary-color-hover;
+      transition: all 0.2s ease;
+      // font-weight: bold;
+      -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+      box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+      color: #fff;
+
+      // padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+      svg {
+        margin-right: 10px;
+        transition: all 0.2s ease;
+      }
+
+      &::after {
+        opacity: 1;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+.donativos-web {
+  margin: 40px 0px;
+  padding: 20px;
+  text-align: center;
+
+  p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .donativos-web-list {
+    &__card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 25px 0;
+    }
+
+    h4 {
+      margin: 0;
+      margin-top: 15px;
+    }
+
+    h2 {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .donativos-web {
+    margin: 40px 0px;
+    padding: 20px;
+    text-align: center;
+
+    p {
+      font-size: 18px;
+      padding: 0 10%;
+    }
+
+    .donativos-web-list {
+      .ant-list-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+
+      &__card {
+        margin: 20px 10px;
+        width: 300px;
+      }
+
+      h4 {
+        margin: 0;
+        margin-top: 15px;
+      }
+
+      h2 {
+        margin: 0;
+      }
+
+      p {
+        font-size: 16px;
+        padding: 0 !important;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .intenciones-web {
+    margin-top: 30px;
+  }
+
+  .donativos-web {
+    margin: 40px 0px;
+    padding: 20px 5%;
+    text-align: center;
+
+    p {
+      font-size: 18px;
+      padding: 0 25%;
+    }
+
+    .donativos-web-list {
+      .ant-list-items {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      &__card {
+        margin: 25px 20px;
+        width: 320px;
+      }
+
+      h4 {
+        margin: 0;
+        margin-top: 15px;
+      }
+
+      h2 {
+        margin: 0;
+      }
+
+      p {
+        font-size: 16px;
+        padding: 0 !important;
+      }
+    }
+  }
+}

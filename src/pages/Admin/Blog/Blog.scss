@@ -1,0 +1,42 @@
+@import "../../../scss/index.scss";
+
+.blog {
+  &__add-post {
+    text-align: right;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .admin-blog-button {
+      .ant-btn-primary {
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &__admin-posts {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .blog {
+    &__add-post {
+      flex-direction: column;
+      justify-content: center;
+
+      .admin-blog-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .ant-btn-primary {
+          width: 100%;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}

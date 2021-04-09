@@ -1,0 +1,223 @@
+@import "../../../scss/index.scss";
+
+.footer {
+   background-color: $footer-color !important;
+   background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23011d40' fill-opacity='0.27' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+   border-top: 3px solid $border-grey-dark;
+   text-align: center;
+   color: $font-grey-dark;
+
+   position: relative;
+   z-index: 3;
+
+   a {
+      color: $color-3;
+      transition: all 0.5s;
+
+      &:hover {
+         color: #fff;
+         transition: all 0.5s;
+      }
+   }
+
+   .footer-info {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__card1 {
+      padding: 20px 0px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid $border-grey;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      img {
+         width: 300px;
+
+         margin-bottom: 20px;
+      }
+
+      //texto del teléfono:
+      a {
+         color: $font-grey;
+         display: flex;
+         align-items: center;
+         font-size: 1rem;
+         padding-left: 5px;
+         text-align: left;
+         margin-bottom: 10px;
+
+         //icono de teléfono:
+
+         svg {
+            margin-right: 8px;
+            font-size: 1.6rem;
+         }
+      }
+   }
+
+   &__card3 {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid $border-grey;
+
+      a {
+         color: $font-grey;
+         display: flex;
+         align-items: center;
+         font-size: 1.3rem;
+
+         text-align: center;
+         margin: 10px auto;
+      }
+   }
+
+   &__card2 {
+      color: $font-grey-light !important;
+      padding: 20px 0px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid $border-grey;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .social-links {
+         justify-content: center;
+         margin-bottom: 5px;
+      }
+
+      h3 {
+         color: $font-grey-light !important;
+         white-space: nowrap;
+      }
+
+      .social-links a svg {
+         width: 25px;
+         height: auto;
+         color: $font-grey-light !important;
+         font-size: 2rem;
+      }
+   }
+}
+
+@media screen and (min-width: 680px) {
+   .footer {
+      .footer-info {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         align-items: center;
+         border-bottom: 1px solid $border-grey;
+         margin-bottom: 20px;
+      }
+
+      &__card1 {
+         width: 300px;
+         padding: 10px;
+         margin: 10px;
+         border-bottom: none;
+
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+         img {
+            margin-bottom: 0px;
+         }
+
+         //texto del teléfono:
+         a {
+            color: $font-grey;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            padding-left: 5px;
+            text-align: left;
+            margin-bottom: 10px;
+
+            &:hover {
+               color: #fff;
+            }
+
+            //icono de teléfono:
+            svg {
+               margin-right: 8px;
+               font-size: 1.6rem;
+            }
+         }
+      }
+
+      &__card3 {
+         width: 300px;
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 10px;
+         padding-bottom: 0px;
+         border-bottom: none;
+
+         a {
+            color: $font-grey;
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+
+            text-align: center;
+            margin: 5px auto;
+
+            &:hover {
+               color: #fff;
+            }
+         }
+      }
+
+      &__card2 {
+         width: 300px;
+         padding: 10px;
+         margin: 10px;
+         border-bottom: none;
+         margin-left: 30px;
+
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         h3 {
+            color: $font-grey-light !important;
+            white-space: nowrap;
+         }
+
+         .social-links a svg {
+            width: 25px;
+            height: auto;
+            color: $font-grey-light !important;
+            font-size: 2rem;
+         }
+      }
+   }
+}
+
+@media screen and (min-width: 1020px) {
+   .footer {
+      .footer-info {
+         padding: 0 10%;
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-evenly;
+         align-items: center;
+      }
+
+      &__card1,
+      &__card2,
+      &__card3 {
+         width: 100vw;
+      }
+   }
+}

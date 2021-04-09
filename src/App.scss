@@ -1,0 +1,13 @@
+@import "./scss/index.scss";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
+
+.success {
+  border: 1px solid $success;
+  background-color: $background-success;
+}
+
+.error {
+  border: 1px solid $error;
+  background-color: $background-error;
+}

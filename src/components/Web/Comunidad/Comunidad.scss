@@ -1,0 +1,241 @@
+@import "../../../scss/index.scss";
+
+.cover {
+  height: 30vh;
+  width: auto;
+  //   padding: 0 15%;
+
+  background-color: $background-dark;
+}
+
+.titulos-comunidad {
+  padding: 0 15px;
+  text-align: justify;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.comunidad {
+  //   border: 1px solid green;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 40px;
+
+  &__card {
+    // border: 1px solid red;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+
+    background-color: #fff;
+    -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+
+    h3 {
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    img {
+      max-height: 330px;
+      max-width: 320px;
+
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    h4 {
+      font-size: 1rem;
+      color: $font-grey-dark;
+      margin-top: 25px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      left: 5px;
+
+      svg {
+        margin-right: 5px;
+        font-size: 1.3rem;
+      }
+    }
+
+    .visitanos-comunidad {
+      position: relative;
+      top: 12px;
+      left: 7px;
+    }
+
+    .comunidad-social-links {
+      padding: 10px 0;
+      display: flex;
+      flex-wrap: wrap;
+      transition: all 0.6s ease;
+
+      a {
+        text-decoration: none;
+        margin: 5px;
+        padding: 5px 10px;
+        color: $font-grey-dark !important;
+        border: 1px solid $font-grey-dark;
+        border-radius: 5px;
+        transition: all 0.8s;
+
+        svg {
+          position: relative;
+          top: 2px;
+        }
+        &:hover {
+          transition: all 0.5s;
+          background-color: $primary-color-hover;
+          box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+          color: #fff !important;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .cover {
+    height: 35vh;
+    width: auto;
+    //   padding: 0 15%;
+  }
+
+  .titulos-comunidad {
+    padding: 0 15%;
+  }
+
+  .comunidad {
+    // border: 1px solid green;
+    padding: 0px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+    .ant-list-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    &__card {
+      margin: 20px !important;
+
+      width: 80vw;
+      //40 vw
+
+      display: flex;
+      flex-direction: column;
+      //   align-content: flex-start;
+
+      img {
+        max-height: 350px;
+        max-width: 660px;
+      }
+
+      h4 {
+        padding-left: 10px;
+      }
+
+      .visitanos-comunidad {
+        position: relative;
+        top: 20px;
+        left: 15px;
+      }
+
+      .comunidad-social-links {
+        padding: 15px 0;
+        transition: all 0.6s ease;
+
+        p {
+          margin-left: 10px;
+        }
+
+        a {
+          margin-left: 15px;
+          padding: 5px 15px;
+          transition: all 0.5s;
+
+          &:hover {
+            transition: all 0.5s;
+            padding: 8px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .cover {
+    width: auto;
+    padding: 0 15%;
+  }
+
+  .titulos-comunidad {
+    padding: 0 15%;
+  }
+
+  .comunidad {
+    margin: 0;
+    padding: 0px 10%;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: unset;
+    justify-content: center;
+
+    margin-bottom: 40px;
+
+    .ant-list-items {
+      display: flex;
+      flex-wrap: unset;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+    }
+
+    &__card {
+      margin: 20px !important;
+      position: relative;
+
+      width: 100%;
+      height: unset;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        max-height: 40vh;
+        max-width: 25vw;
+        margin-right: 20px;
+      }
+
+      h4 {
+        padding-left: 10px;
+      }
+    }
+  }
+}

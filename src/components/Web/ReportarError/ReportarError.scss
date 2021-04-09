@@ -1,0 +1,102 @@
+@import "../../../scss/index.scss";
+
+.reportar-error {
+  padding: 20px;
+  margin-bottom: 50px;
+
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+    color: $font-grey-dark;
+    margin-top: 10px;
+
+    font-size: 35px;
+    position: relative;
+    top: 15px;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  &__info {
+    padding: 20px;
+    margin: 30px 0;
+    background-color: #fff;
+    border-radius: 10px;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .ant-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    .ant-form-item {
+      margin-bottom: 15px;
+    }
+
+    .ant-btn-primary {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .reportar-error {
+    padding: 0 40px;
+    h1 {
+      margin-top: 10px;
+    }
+
+    &__info {
+      padding: 40px;
+      margin: 30px 0;
+    }
+
+    .ant-form {
+      padding: 20px;
+
+      .ant-form-item {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .reportar-error {
+    padding: 0 17%;
+    h1 {
+      margin-top: 0px;
+    }
+
+    &__info {
+      padding: 40px;
+      margin: 30px 0;
+
+      .title-apostolado {
+        padding: 10px 20%;
+      }
+    }
+
+    .ant-form {
+      .ant-form-item {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

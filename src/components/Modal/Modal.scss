@@ -1,0 +1,27 @@
+.modal-modificacion {
+  border-radius: 5px;
+  .ant-modal-content {
+    position: relative;
+    top: 0;
+
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+// .ant-modal-content {
+//   width: unset !important;
+//   text-align: unset !important;
+//   position: unset !important;
+//   bottom: unset !important;
+// }
+
+@media screen and (max-width: 576px) {
+  .modal-modificacion {
+    border-radius: 5px;
+    .ant-modal-content {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../../scss/index.scss";
+
+.comunidad-list {
+  &__header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ant-btn-primary {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .comunidad-list {
+    &__header {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .buttons-comunidad {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .ant-btn-primary {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .comunidad-list {
+    &__header {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+
+      .buttons-comunidad {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .ant-btn-primary {
+        margin: 10px;
+      }
+    }
+  }
+}

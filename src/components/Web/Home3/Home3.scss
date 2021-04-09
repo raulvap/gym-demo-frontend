@@ -1,0 +1,64 @@
+@import "../../../scss/index.scss";
+
+.home3 {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+
+  .ant-col {
+    margin-bottom: 50px;
+
+    .anticon {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      margin-top: 10px;
+      text-decoration: none;
+      cursor: pointer;
+      // border: 2px solid $border-grey;
+      border-radius: 10px;
+
+      background: $border-grey-dark;
+      color: #fff;
+
+      //   height: 200px;
+      //   width: 500px;
+      padding: 10px 30px;
+
+      transition: all 0.5s;
+
+      &:hover {
+        background: $primary-color-hover;
+        transition: all 0.5s;
+        border-radius: 10px;
+        -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+        box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+        color: #fff;
+
+        // padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+
+        &::after {
+          opacity: 1;
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .home3 {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    .ant-col {
+      padding: 0 30px !important;
+    }
+  }
+}

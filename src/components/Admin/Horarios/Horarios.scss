@@ -1,0 +1,96 @@
+@import "../../../scss/index.scss";
+
+.horario-list {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .ant-btn-primary {
+      margin-left: 15px;
+    }
+  }
+
+  &__items {
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+
+    .List {
+      position: relative;
+
+      .draggable {
+        width: 100%;
+        padding: 5px 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid $border-grey-light;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.dragged {
+          border: 1px solid #e2e2e2;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+  .ant-list-item-meta {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .horario-list {
+    &__header {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .buttons-comunidad {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .ant-btn-primary {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .horario-list {
+    &__header {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .buttons-comunidad {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .ant-btn-primary {
+        margin: 10px;
+      }
+    }
+
+    .ant-list-item {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .ant-list-item-meta-content {
+      width: 100%;
+    }
+  }
+}

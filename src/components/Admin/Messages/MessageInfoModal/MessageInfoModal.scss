@@ -1,0 +1,24 @@
+@import "../../../../scss/index.scss";
+
+.message-info-modal {
+  p {
+    margin-bottom: 10px;
+    background-color: #fff;
+    display: flex;
+
+    h4 {
+      padding: 0;
+      margin: 0;
+      padding-left: 15px;
+      word-break: break-word !important;
+    }
+  }
+
+  &__info {
+    position: relative;
+    bottom: 5px;
+    border-radius: 10px;
+    background-color: $background-color-general !important;
+    padding: 10px;
+  }
+}

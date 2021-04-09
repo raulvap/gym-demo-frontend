@@ -1,0 +1,246 @@
+@import "../../../scss/index.scss";
+
+.cardHorario {
+  margin: 20px 10px;
+  padding: 10px;
+
+  background-color: #fff;
+  box-shadow: 0px 6px 15px $font-grey;
+  border-radius: 10px;
+
+  h3 {
+    font-weight: bold;
+    white-space: normal;
+  }
+  p {
+    margin: 0;
+  }
+}
+
+.contacto {
+  padding-top: 20px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  text-align: center;
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+    padding: 5px;
+    margin: 0 10px;
+
+    background-color: #fff;
+    box-shadow: 0px 6px 15px $font-grey;
+    border-radius: 10px;
+
+    margin-bottom: 40px;
+
+    a {
+      text-decoration: none;
+      color: $font-grey-dark;
+
+      transition: all 0.5s ease;
+    }
+
+    .address {
+      border-right: 0.5px solid $border-grey;
+      padding-right: 10px;
+      transition: all 0.5s ease;
+      &:hover,
+      :after {
+        padding: 0.1px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+    }
+
+    .phone {
+      white-space: nowrap;
+      font-size: 1.2rem;
+      padding-left: 5px;
+      transition: all 0.5s ease;
+      display: flex;
+      align-items: center;
+      &:hover,
+      :after {
+        padding-right: 30px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+
+  &__horarios {
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 20px;
+
+    .ant-list-items {
+    }
+  }
+}
+
+.registro-link-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 10px;
+  width: 90vw;
+  height: 40px;
+  position: relative;
+  // bottom: 20px;
+
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  // border: 2px solid $border-grey;
+  border-radius: 10px;
+  background: #ef0c0c;
+  color: #fff;
+  transition: all 0.8s ease;
+
+  &:hover {
+    transition: all 0.4s;
+    background: #ef0c0c;
+    padding: 30px;
+
+    // font-weight: bold;
+    -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+    color: #fff;
+
+    // padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+
+    &::after {
+      opacity: 1;
+      transition: all 0.5s;
+    }
+  }
+}
+
+@media screen and (min-width: 689px) {
+  .cardHorario {
+    width: 270px;
+    height: 85%;
+    margin: 10px;
+    padding: 10px 15px;
+    flex: 1;
+  }
+
+  .contacto {
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-right: 12%;
+      margin-left: 12%;
+
+      .address {
+        width: 50%;
+        text-align: start;
+        display: flex;
+        align-items: center;
+        padding-right: 40px;
+
+        svg {
+          font-size: 2rem;
+          margin-right: 5px;
+        }
+      }
+
+      .phone {
+        text-align: end;
+        text-align: start;
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        font-size: 1.5rem;
+
+        svg {
+          font-size: 1.5rem;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    &__horarios {
+      // padding-right: 10%;
+      // padding-left: 10%;
+
+      width: 100%;
+      // flex-direction: row;
+      // justify-content: center;
+      // flex-wrap: wrap;
+      // align-content: space-around;
+      // align-items: stretch;
+
+      .ant-list-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  .registro-link-contacto {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 78%;
+    height: 50px;
+
+    transition: all 1s;
+
+    &:hover {
+      transition: all 0.8s;
+      background: #ef0c0c;
+      padding: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .contacto {
+    &__horarios {
+      padding-right: 12%;
+      padding-left: 12%;
+    }
+  }
+
+  .registro-link-contacto {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 60%;
+    height: 50px;
+    font-size: 1.5rem;
+
+    transition: all 1s;
+
+    &:hover {
+      // transition: all 0.8s;
+      background: #ef0c0c;
+      padding: 30px;
+    }
+  }
+}
