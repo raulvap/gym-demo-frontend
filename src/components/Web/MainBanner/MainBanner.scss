@@ -1,57 +1,206 @@
 @import "../../../scss/index.scss";
 
+//Mobile
 .main-banner {
+   width: 100%;
+   height: 75vh;
+   overflow: hidden;
    position: relative;
-   height: 55vh;
-   background-image: url("../../../assets/img/jpg/web-cover-home.jpg");
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
 
-   &__dark {
+   .background_image {
       position: absolute;
       top: 0;
+      // left: 0;
+      right: 0px;
+      width: 140%;
+      height: 85%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left center;
+   }
+
+   .overlay {
+      position: absolute;
       left: 0;
+      top: 85%;
+      // bottom: -270px;
+      width: 110%;
+      height: 13%;
+      background: $background-color-general;
+      transform-origin: top left;
+      transform: rotate(-8deg);
+      z-index: 1;
+      box-shadow: 0 0 1px 0 #ffffff inset, 0 0 1px 0 #ffffff;
+   }
+
+   .home_container {
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 100%;
       height: 100%;
-      background-color: #000;
-      opacity: 0.2;
+      z-index: 2;
+
+      .home_info {
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+
+         .home_title {
+            margin-top: 30px;
+            font-size: 3rem;
+            font-weight: 200;
+            color: #fff;
+            line-height: 1.2;
+            margin-top: 80px;
+            white-space: nowrap;
+         }
+
+         .home_subtitle {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            margin: 5px 30px;
+         }
+
+         .home_button {
+            margin: 20px auto;
+            padding: 10px 10px;
+            width: 300px;
+            background-color: transparent;
+            border-radius: 1px;
+            border: 0.5px solid #fff;
+            transition: all 0.6s ease;
+
+            a {
+               font-weight: bold;
+            }
+
+            &:hover {
+               background-color: $primary-color-hover;
+               color: $color-6 i !important;
+               transition: all 0.6s ease;
+            }
+         }
+      }
    }
 }
 
-// .main-banner {
-//   position: relative;
-//   height: 500px;
-//   background-image: url("../../../assets/img/jpg/home-v1.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center center;
+// iPad Vertical
+@media screen and (min-width: 760px) {
+   .main-banner {
+      height: 70vh;
 
-//   &__dark {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: #000;
-//     opacity: 0.6;
-//   }
+      .background_image {
+         position: absolute;
+         top: 0;
+         left: 0;
+         // right: 0px;
+         width: 140%;
+         height: 70%;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;
+      }
+      .overlay {
+         position: absolute;
+         left: 0;
+         top: 70%;
+         // bottom: -270px;
+         width: 110%;
+         height: 13%;
 
-//   .ant-row {
-//     display: flex;
-//     align-items: center;
-//     height: 100%;
+         transform-origin: top left;
+         transform: rotate(-5deg);
+      }
 
-//     h2 {
-//       color: #fff;
-//       font-size: 60px;
-//       font-weight: bold;
-//       line-height: 1;
-//     }
+      .home_container {
+         width: 100%;
+         height: 100%;
 
-//     h3 {
-//       color: #fff;
-//       font-size: 24px;
-//     }
-//   }
-// }
+         .home_info {
+            margin-top: 150px;
+
+            .home_title {
+               margin-top: 30px;
+               font-size: 5rem;
+            }
+
+            .home_button {
+               a {
+                  color: #fff;
+                  font-weight: bold;
+               }
+            }
+         }
+      }
+   }
+}
+
+// iPad Horizontal
+@media screen and (min-width: 1020px) {
+   .main-banner {
+      height: 75vh;
+
+      .background_image {
+         position: absolute;
+         top: 0;
+         left: 0;
+         // right: 0px;
+         width: 100%;
+         height: 90%;
+      }
+
+      .overlay {
+         position: absolute;
+         left: 0;
+         top: 90%;
+         // bottom: -270px;
+         width: 110%;
+         height: 15%;
+
+         transform-origin: top left;
+         transform: rotate(-4deg);
+      }
+
+      .home_container {
+         width: 100%;
+         height: 100%;
+
+         .home_info {
+            margin-top: 150px;
+
+            .home_title {
+               margin-top: 0px;
+               font-size: 6rem;
+            }
+
+            .home_button {
+               a {
+                  color: #fff;
+                  font-weight: bold;
+               }
+            }
+         }
+      }
+   }
+}
+
+// Large Screen
+@media screen and (min-width: 1280px) {
+   .main-banner {
+      .background_image {
+         position: absolute;
+         top: 0;
+         left: 0;
+         // right: 0px;
+         width: 100%;
+         height: 100%;
+      }
+      .overlay {
+         display: none;
+      }
+   }
+}

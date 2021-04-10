@@ -1,4 +1,4 @@
-export const dataParroquia = "Parroquia San Francisco Javier de las Colinas";
+export const dataParroquia = "Sport Gym Demo";
 export const dataDireccion =
    "Paseo Loma Ancha 3460, Colinas de San Javier, 44660 Guadalajara, Jal. MX";
 export const dataMapsLink = "https://goo.gl/maps/TUCfrvASxa9SNjGQ8";
