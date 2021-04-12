@@ -10,24 +10,22 @@ import "./Copyright.scss";
 //Blueheart: U+1F499
 
 export default function Copyright() {
-  return (
-    <div className='copyright-footer'>
-      <Link to='/reportar-error' className='copyright-footer__eclesia'>
-        Web App by Eclesia ©2021
-      </Link>
+   return (
+      <div className="copyright-footer">
+         <Link to="/reportar-error" className="copyright-footer__eclesia">
+            Web App by Desarrollo29 ©2021
+         </Link>
 
-      <br />
-      <span>
-        Hecho con 💙 desde Guadalajara {<ReactCountryFlag countryCode='MX' />}
-      </span>
-      <br />
-      <div className='copyright-footer__links'>
-        <Link to='/aviso-privacidad'>Aviso de Privacidad</Link>
-        <span>
-          {"  "}|{"  "}
-        </span>
-        <Link to='/reportar-error'>Reportar un error</Link>
+         <br />
+         <span>Hecho con 💙 desde Guadalajara {<ReactCountryFlag countryCode="MX" />}</span>
+         <br />
+         <div className="copyright-footer__links">
+            <Link to="/aviso-privacidad">Aviso de Privacidad</Link>
+            <span>
+               {"  "}|{"  "}
+            </span>
+            <Link to="/reportar-error">Reportar un error</Link>
+         </div>
       </div>
-    </div>
-  );
+   );
 }

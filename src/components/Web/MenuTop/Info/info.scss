@@ -1,103 +1,104 @@
 @import "../../../../scss/index.scss";
 
 .info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-content: center;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+   align-content: center;
+   background-color: $color-6;
 
-  padding: 5px;
+   padding: 5px;
 
-  // border: 1px solid aqua;
+   // border: 1px solid aqua;
 
-  &__address {
-    // border: 1px solid red;
-    display: flex;
-    align-content: center;
-    margin-right: 10px;
-    padding-right: 5px;
-    font-size: 3vw;
-
-    a {
-      text-decoration: none;
+   &__address {
+      // border: 1px solid red;
       display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      color: $font-grey-dark;
+      align-content: center;
+      margin-right: 10px;
+      padding-right: 5px;
+      font-size: 3vw;
 
-      svg {
-        font-size: 60px;
+      a {
+         text-decoration: none;
+         display: flex;
+         flex-wrap: nowrap;
+         align-items: center;
+         color: $font-grey-dark;
+
+         svg {
+            font-size: 60px;
+         }
+
+         transition: all 0.5s ease;
+         &:hover,
+         :after {
+            font-size: 102%;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+         }
       }
+   }
 
-      transition: all 0.5s ease;
-      &:hover,
-      :after {
-        font-size: 102%;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-      }
-    }
-  }
+   &__phone {
+      // border: 1px solid blue;
+      white-space: nowrap;
+      font-size: 5vw;
+      margin-right: 5px;
 
-  &__phone {
-    // border: 1px solid blue;
-    white-space: nowrap;
-    font-size: 5vw;
-    margin-right: 5px;
-
-    display: flex;
-    align-content: center;
-
-    a {
-      text-decoration: none;
       display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
-      color: $font-grey-dark;
+      align-content: center;
 
-      svg {
-        margin-right: 5px;
+      a {
+         text-decoration: none;
+         display: flex;
+         flex-wrap: nowrap;
+         align-items: center;
+         color: $font-grey-dark;
+
+         svg {
+            margin-right: 5px;
+         }
+         transition: all 0.5s ease;
+         &:hover,
+         :after {
+            font-size: 105%;
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+         }
       }
-      transition: all 0.5s ease;
-      &:hover,
-      :after {
-        font-size: 105%;
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-      }
-    }
-  }
+   }
 }
 
 @media screen and (min-width: 650px) {
-  .info {
-    padding-left: 10%;
-    padding-right: 10%;
+   .info {
+      padding-left: 10%;
+      padding-right: 10%;
 
-    &__address {
-      margin-right: 10px;
-      font-size: 16px;
+      &__address {
+         margin-right: 10px;
+         font-size: 16px;
 
-      a {
-        svg {
-          font-size: 1.5rem;
-        }
+         a {
+            svg {
+               font-size: 1.5rem;
+            }
+         }
       }
-    }
 
-    &__phone {
-      font-size: 1.5rem;
+      &__phone {
+         font-size: 1.5rem;
 
-      a {
-        svg {
-          font-size: 1em;
-        }
+         a {
+            svg {
+               font-size: 1em;
+            }
+         }
       }
-    }
-  }
+   }
 }

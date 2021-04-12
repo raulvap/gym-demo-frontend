@@ -15,9 +15,9 @@ export default function MainBanner() {
                <div className="home_title">Get fit with us</div>
                <div className="home_subtitle">Pilates, Yoga, Fitness, Spinning & many more</div>
 
-               <div className="home_button">
-                  <Link to="/">Join Now</Link>
-               </div>
+               <Link className="home_button" to="/">
+                  Join Now
+               </Link>
             </div>
          </div>
       </div>

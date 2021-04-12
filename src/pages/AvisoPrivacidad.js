@@ -6,11 +6,11 @@ import { dataParroquia, dataDireccion } from "../utils/dataVariables";
 import "../scss/index.scss";
 
 export default function AvisoPrivacidad() {
-   const sujeto = "ECLESIA DIGITAL";
+   const sujeto = "Desarrollo29";
    const direccion = dataDireccion;
    const parroquia = dataParroquia;
-   const correo = "info@eclesia.com.mx";
-   const fecha = "8 de marzo de 2021";
+   const correo = "info@desarrollo29.com";
+   const fecha = "11 de abril de 2021";
 
    return (
       <>

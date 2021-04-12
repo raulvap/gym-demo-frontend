@@ -4,16 +4,14 @@ import { Layout, Menu } from "antd";
 import {
    UserOutlined,
    CommentOutlined,
-   CarryOutOutlined,
    ClockCircleOutlined,
    ReadOutlined,
    InfoCircleOutlined,
-   AppstoreOutlined,
    BellOutlined,
    SettingOutlined,
-   HeartOutlined,
    CalendarOutlined,
    HomeOutlined,
+   AppstoreAddOutlined,
 } from "@ant-design/icons";
 
 import "./MenuSider.scss";
@@ -48,13 +46,6 @@ function MenuSider(props) {
             </Menu.Item>
 
             <Menu.Item>
-               <Link to="/admin/registro">
-                  <CarryOutOutlined />
-                  <span className="nac-text">Registros para Misas</span>
-               </Link>
-            </Menu.Item>
-
-            <Menu.Item>
                <Link to="/admin/mensajes">
                   <CommentOutlined />
                   <span className="nav-text">Mensajes Recibidos</span>
@@ -68,13 +59,6 @@ function MenuSider(props) {
                </Link>
             </Menu.Item>
 
-            {/* <Menu.Item>
-          <Link to='/admin/intenciones'>
-            <HeartOutlined />
-            <span className='nac-text'>Intenciones</span>
-          </Link>
-        </Menu.Item> */}
-
             <Menu.Item>
                <Link to="/admin/horarios">
                   <ClockCircleOutlined />
@@ -83,23 +67,23 @@ function MenuSider(props) {
             </Menu.Item>
 
             <Menu.Item>
-               <Link to="/admin/servicios">
+               <Link to="/admin/comunidades">
                   <SettingOutlined />
                   <span className="nac-text">Servicios</span>
                </Link>
             </Menu.Item>
 
             <Menu.Item>
-               <Link to="/admin/comunidades">
-                  <AppstoreOutlined />
-                  <span className="nac-text">Comunidad</span>
+               <Link to="/admin/servicios">
+                  <AppstoreAddOutlined />
+                  <span className="nac-text">Instalaciones</span>
                </Link>
             </Menu.Item>
 
             <Menu.Item>
                <Link to="/admin/calendario">
                   <CalendarOutlined />
-                  <span className="nac-text">Eventos</span>
+                  <span className="nac-text">Eventos | Clases</span>
                </Link>
             </Menu.Item>
 
@@ -127,7 +111,7 @@ function MenuSider(props) {
 
          <div className="contacto-eclesia">
             {/* <Link to='/reportar-error'>Reportar un Error</Link> */}
-            <Link to="/reportar-error">Contacto con Eclesia Digital</Link>
+            <Link to="/reportar-error">Contacto con Desarrollo29</Link>
          </div>
       </Sider>
    );

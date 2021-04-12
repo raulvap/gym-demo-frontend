@@ -61,7 +61,7 @@ export default function InfoParroquia() {
    return (
       <div className="info-parroquia">
          <div className="info-parroquia__eclesia">
-            <h3>Información de la Cuenta en Eclesia Digital</h3>
+            <h3>Información de la Cuenta en Desarrollo 29</h3>
             <ul>
                <li>
                   Parroquia: {"  "}
@@ -84,10 +84,10 @@ export default function InfoParroquia() {
                mensaje en este <Link to="/reportar-error">formulario</Link>
             </p>
             <p>
-               <b>Contacto Eclesia Digital:</b>
+               <b>Contacto Desarrollo 29:</b>
             </p>
             <ul>
-               <li>info@eclesia.com.mx</li>
+               <li>info@desarrollo29.com</li>
                <li>
                   <a
                      href="https://wa.me/525616161396?text=¡Hola!%20Quiero%20..."

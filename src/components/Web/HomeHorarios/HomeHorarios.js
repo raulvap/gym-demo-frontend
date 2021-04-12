@@ -8,11 +8,10 @@ import "moment/locale/es";
 import { getHorarioApi } from "../../../api/horarios";
 
 // --- COMPONENTS ---
+import { MdTouchApp } from "react-icons/md";
 import { List, Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
-import { MdTouchApp } from "react-icons/md";
-import { FaYoutube, FaFacebook } from "react-icons/fa";
-import { youtubeLink, fbLinkPage, dataParroquia } from "../../../utils/dataVariables";
+import { dataParroquia } from "../../../utils/dataVariables";
 
 import "./HomeHorarios.scss";
 
@@ -28,7 +27,7 @@ export default function HomeHorarios() {
       getHorarioApi().then((response) => {
          const arrayHorario = [];
          response.horario.forEach((item) => {
-            item.active && arrayHorario.push(item);
+            arrayHorario.push(item);
             if (!lastUpdate) {
                setLastUpdate(item.date);
             } else {
@@ -55,9 +54,7 @@ export default function HomeHorarios() {
    if (isLoading) {
       return (
          <>
-            <h2 style={{ textAlign: "center", padding: "25px" }}>
-               ¡Bienvenido a la página oficial de la {dataParroquia}!
-            </h2>
+            <h2 style={{ textAlign: "center", padding: "25px" }}>¡Bienvenido a {dataParroquia}!</h2>
             <Spin
                indicator={antIcon}
                tip="Cargando Información..."
@@ -72,55 +69,19 @@ export default function HomeHorarios() {
             <div className="home-horarios">
                <List
                   dataSource={horarioData}
-                  renderItem={(item) => <HomeHorarioCard item={item} />}
+                  renderItem={(item) => <HomeHorarioCard key={item._id} item={item} />}
                />
             </div>
 
-            <Link className="registro-link-inicio" to="/registro-misa">
-               <MdTouchApp />
-               Regístrate aqui para asistir a Misa
-            </Link>
-
-            <Link className="horarios-mas" to="/contacto">
-               Ver Horarios Completos
-            </Link>
             <h4 className="actualizacion">
-               Última actualización:
+               Última actualización de horarios:
                <br />
                {moment(lastUpdate).format("LL")}
             </h4>
 
-            <div className="home-envivo">
-               <h3>Transmisión de Misa En Vivo</h3>
-               <p>
-                  Podrás seguir las transmisiones <strong>En Vivo</strong> de la Parroquia en:
-               </p>
-               <div className="home-envivo__links">
-                  <a href={youtubeLink} className="home-youtube">
-                     <FaYoutube /> YouTube
-                  </a>
-
-                  {windowType === "large" ? (
-                     <a
-                        // href='fb://page/Parroquia-San-Fco-Javier-de-Las-Colinas-502155349977513/'
-                        href={fbLinkPage}
-                        className="home-facebook"
-                     >
-                        <FaFacebook />
-                        Facebook
-                     </a>
-                  ) : (
-                     <a
-                        // href='fb://page/Parroquia-San-Fco-Javier-de-Las-Colinas-502155349977513/'
-                        href="fb:/ParroquiaSantaMariadeGuadalupeJardinesUniversidad"
-                        className="home-facebook"
-                     >
-                        <FaFacebook />
-                        Facebook
-                     </a>
-                  )}
-               </div>
-            </div>
+            <Link className="horarios-mas" to="/calendario">
+               <MdTouchApp /> Para registrarse a una clase
+            </Link>
          </div>
       );
    }
@@ -130,14 +91,14 @@ function HomeHorarioCard(props) {
    const { item } = props;
 
    const newDescripcion = item.description.split("\n").map((str) => (
-      <p>
+      <span>
          {str}
          <br />
-      </p>
+      </span>
    ));
 
    return (
-      <ScrollAnimation animateIn="fadeIn" animateOnce={true} key={item._id}>
+      <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
          <div className="home-horarios__card">
             <h2>{item.title}</h2>
             <p>{newDescripcion}</p>

@@ -1,42 +1,82 @@
 @import "../../../scss/index.scss";
 
-.home-avisos {
-  background-color: $color-6;
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 40px;
+.avisos-container {
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 
-  h2 {
-    color: #fff;
-  }
-  p {
-    margin: 0;
-  }
+   img {
+      width: 80%;
+      position: relative;
+      margin-bottom: 20px;
+      z-index: 2;
+   }
 
-  .ant-collapse-header {
-    font-weight: bold;
-    text-align: left;
-  }
+   .home-avisos {
+      margin-bottom: 40px;
+      position: relative;
+      z-index: 4;
+      background-color: $color-6;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 40px;
+
+      h2 {
+         color: #fff;
+      }
+      p {
+         margin: 0;
+      }
+
+      .ant-collapse-header {
+         font-weight: bold;
+         text-align: left;
+      }
+   }
 }
 
 @media screen and (min-width: 600px) {
-  .home-avisos {
-    padding: 20px 15%;
-    width: 100%;
-    padding-bottom: 40px;
+   .avisos-container {
+      .image-over-avisos {
+         width: 60%;
+         position: relative;
+         margin-bottom: 20px;
+         z-index: 2;
+         //  transform: rotate(-8deg);
+      }
 
-    .ant-collapse-header {
-      font-weight: bold;
-      text-align: center;
-    }
-  }
+      .home-avisos {
+         padding: 20px 15%;
+         width: 100%;
+         padding-bottom: 40px;
+
+         .ant-collapse-header {
+            font-weight: bold;
+            text-align: center;
+         }
+      }
+   }
 }
 
 @media screen and (min-width: 1020px) {
-  .home-avisos {
-    padding: 20px 25%;
-    padding-bottom: 40px;
-    width: 100%;
-  }
+   .avisos-container {
+      .image-over-avisos {
+         width: 30%;
+         position: relative;
+
+         margin-bottom: 20px;
+         z-index: 2;
+         //  transform: rotate(-8deg);
+      }
+
+      .home-avisos {
+         padding: 20px 25%;
+         padding-bottom: 40px;
+         width: 100%;
+      }
+   }
 }

@@ -5,21 +5,17 @@ import useAuth from "../hooks/useAuth";
 import ReportarErrorComponent from "../components/Web/ReportarError";
 
 export default function ReportarError(props) {
-  const { user } = useAuth();
+   const { user } = useAuth();
 
-  const userData = user;
+   const userData = user;
 
-  return (
-    <>
-      <Helmet>
-        <title>Web App by Eclesia Digital </title>
-        <meta
-          name='Eclesia-Digital'
-          content='Eclesia Digital'
-          data-react-helmet='true'
-        />
-      </Helmet>
-      <ReportarErrorComponent userData={userData} />
-    </>
-  );
+   return (
+      <>
+         <Helmet>
+            <title>Web App by Desarrollo29 </title>
+            <meta name="Desarrollo29" content="Desarrollo29" data-react-helmet="true" />
+         </Helmet>
+         <ReportarErrorComponent userData={userData} />
+      </>
+   );
 }

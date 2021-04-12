@@ -1,48 +1,29 @@
 @import "../../../scss/index.scss";
 
 .home-horarios {
-   padding: 10px;
-
+   padding: 15px;
    position: relative;
-   bottom: 80px;
+   z-index: 5;
+   bottom: 130px;
 
    &__card {
+      margin: 15px;
+      padding: 10px 0 15px 0;
       text-align: center;
-      background-color: #fff;
+      color: #fff;
+      background-color: black;
       opacity: 0.8;
-      margin: 25px;
-      padding: 5px;
-      padding-bottom: 10px;
 
-      flex: 1;
-      height: 100%;
-      min-height: 150px;
-
-      border: 4px solid;
-      border-radius: 10px;
-
+      border: 10px solid;
       border-image-slice: 1;
-      border-image-source: linear-gradient(
-         to right top,
-         #4a235a,
-         #4a2a63,
-         #49316d,
-         #463876,
-         #433f7f,
-         #404587,
-         #3c4c8f
-      );
-      // linear-gradient(
-      //   to top,
-      //   #1e3c72 0%,
-      //   #1e3c72 1%,
-      //   #2a5298 100%
-      // );
+      border-width: 3px;
+      border-image-source: linear-gradient(to bottom, #ffbf00, #ff9711);
 
-      // border-image-source: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
       h2 {
+         color: #fff;
          font-size: 18px;
          font-weight: 600;
+         margin-bottom: 10px !important;
       }
 
       p {
@@ -58,263 +39,348 @@
    }
 }
 
-//fecha de actualización:
-.actualizacion {
-   margin: 40px 0;
-   font-size: 14px;
-   font-weight: 400;
-   font-style: italic;
-   text-align: center;
-   position: relative;
-   bottom: 60px;
-}
-
-//boton ver horarios completos
 .horarios-mas {
-   display: flex;
-   justify-content: center;
-   margin: auto;
-   width: 70vw;
-   max-width: 330px;
-   position: relative;
-   bottom: 20px;
-   margin-bottom: 20px;
-
-   text-decoration: none;
-   text-align: center;
-
-   cursor: pointer;
-   // border: 2px solid $border-grey;
-   border-radius: 10px;
-
-   background: $primary-color-hover;
-   //   height: 200px;
-   //   width: 500px;
-   padding: 10px;
-   color: $font-light;
-   box-shadow: 0px 1px 4px rgba(11, 110, 166, 0.65);
-
-   transition: all 1s;
-
-   &:hover {
-      background: $primary-color-hover;
-      transition: all 1s;
-      // font-weight: bold;
-      -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
-      box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
-      color: #fff;
-
-      // padding: 1.5rem 3.5rem 1.5rem 1.5rem;
-
-      &::after {
-         opacity: 1;
-         transition: all 0.5s;
-      }
-   }
-}
-
-// botón registro misa
-.registro-link-inicio {
+   //ver todos los horarios
    display: flex;
    justify-content: center;
    align-items: center;
    margin: auto;
-   width: 90vw;
-   height: 50px;
-
+   width: 300px;
    position: relative;
-   bottom: 20px;
-   margin-bottom: 30px;
-
-   text-decoration: none;
+   bottom: 150px;
    text-align: center;
+   white-space: nowrap;
 
+   padding: 10px 0;
+   background-color: $color-6;
+   color: #fff !important;
+   border: 2px solid $color-6;
    cursor: pointer;
-   // border: 2px solid $border-grey;
-   border-radius: 10px;
+   color: $color-6;
+   font-weight: bold;
+   transition: all 0.6s ease;
 
-   background: #ef0c0c;
-   box-shadow: 0px 6px 15px $font-grey;
-   //   height: 200px;
-   //   width: 500px;
-   padding: 10px;
-   color: $font-light;
-
-   transition: all 0.8s ease;
+   svg {
+      font-size: 20px;
+      margin-right: 5px;
+   }
 
    &:hover {
-      transition: all 0.4s ease;
-      background: #ef0c0c;
-      padding: 30px;
-      // font-weight: bold;
-      -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
-      box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
-      color: #fff;
-
-      &::after {
-         opacity: 1;
-         transition: all 0.5s;
-      }
-   }
-}
-
-// info Misas en vivo
-.home-envivo {
-   text-align: center;
-   margin-bottom: 60px;
-
-   h3 {
-      font-weight: bold;
-      color: $font-grey-dark;
-   }
-
-   &__links {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-
-      .home-youtube {
-         background-color: $youtube;
-      }
-
-      .home-facebook {
-         background-color: $facebook21;
-      }
-
-      .home-youtube,
-      .home-facebook {
-         padding: 10px 15px;
-
-         border-radius: 10px;
-         margin: 5px;
-         color: $font-light;
-
-         display: flex;
-         align-items: center;
-
-         svg {
-            font-size: 20px;
-            margin-right: 5px;
-         }
-      }
-   }
-}
-
-@media screen and (min-width: 730px) {
-   .home-horarios {
-      padding: 10px;
-
-      position: relative;
-      bottom: 80px;
-
-      .ant-list-items {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-evenly;
-      }
-
-      .fade-in {
-         margin: 15px;
-      }
-
-      &__card {
-         margin: 0;
-         padding: 10px 60px;
-         width: 40vw;
-         margin-bottom: 40px;
-         height: 90%;
-
-         opacity: 0.95;
-
-         h2 {
-            font-size: 20px;
-            font-weight: 600;
-         }
-
-         p {
-            font-size: 16px;
-         }
-
-         h2,
-         h3,
-         p {
-            margin: 0;
-            padding: 0;
-         }
-      }
-   }
-   .registro-link-inicio {
-      font-size: 1rem;
-      width: 80%;
-   }
-
-   .home-envivo {
-      &__links {
-         .home-youtube,
-         .home-facebook {
-            padding: 10px 25px;
-
-            border-radius: 10px;
-            margin: 15px;
-            color: $font-light;
-
-            svg {
-               font-size: 22px;
-               margin-right: 8px;
-            }
-         }
-      }
-   }
-}
-
-@media screen and (min-width: 1024px) {
-   .home-horarios {
-      padding: 10px;
-
-      position: relative;
-      bottom: 80px;
-
-      .ant-list-items {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: space-evenly;
-      }
-
-      .fade-in {
-         margin: 20px;
-      }
-
-      &__card {
-         margin: 0;
-         padding: 10px 60px;
-         max-width: 300px;
-         height: 100%;
-      }
-   }
-}
-
-@media screen and (min-width: 1200px) {
-   .home-horarios {
-      padding: 10px 15%;
-      bottom: 53px;
-
-      &__card {
-         opacity: 1;
-
-         margin: 0;
-         padding: 10px 60px;
-         width: 20vw;
-         max-width: 350px;
-         height: 100%;
-      }
-   }
-
-   .registro-link-inicio {
-      font-size: 1.5rem;
-      width: 60%;
+      background-color: $primary-color-hover;
+      color: $color-6 !important;
+      transition: all 0.6s ease;
    }
 }
 
 .actualizacion {
-   bottom: 30px;
+   //última actualización
+
+   text-align: center;
+   color: $font-grey-dark;
+   font-size: 12px;
+   font-style: italic;
 }
+
+// iPad Vertical
+@media screen and (min-width: 760px) {
+   .home-horarios {
+      position: relative;
+      bottom: 220px;
+
+      .ant-list-items {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         flex: 1 1;
+      }
+
+      &__card {
+         width: 330px;
+         height: 85%;
+         margin: 15px;
+         padding: 15px 0;
+         opacity: 0.8;
+      }
+   }
+
+   .horarios-mas {
+      //ver todos los horarios
+      width: 400px;
+      position: relative;
+      bottom: 200px;
+      padding: 12px 0;
+   }
+}
+
+// iPad Horizontal
+@media screen and (min-width: 1020px) {
+   .home-horarios {
+      position: relative;
+      bottom: 160px;
+
+      .ant-list-items {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+         flex: 1 1;
+      }
+
+      &__card {
+         width: 330px;
+         height: 85%;
+         margin: 15px;
+         padding: 15px 0;
+         opacity: 0.8;
+      }
+   }
+
+   .horarios-mas {
+      //ver todos los horarios
+      width: 400px;
+      position: relative;
+      bottom: 150px;
+      padding: 12px 0;
+   }
+}
+
+// Large Screen
+@media screen and (min-width: 1280px) {
+   .home-horarios {
+      position: relative;
+      bottom: 80px;
+
+      .ant-list-items {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         flex: 1 1;
+      }
+
+      &__card {
+         width: 330px;
+         height: 85%;
+         margin: 15px;
+         padding: 15px 0;
+         opacity: 0.8;
+      }
+   }
+
+   .horarios-mas {
+      //ver todos los horarios
+      width: 400px;
+      position: relative;
+      bottom: 100px;
+      padding: 12px 0;
+   }
+
+   .actualizacion {
+      margin-bottom: 0px;
+      position: relative;
+      top: 20px;
+   }
+}
+
+//    border: 1px solid blue;
+//    padding: 10px;
+//    position: relative;
+//    bottom: 80px;
+//    z-index: 5;
+
+//    &__card {
+//       text-align: center;
+//       background-color: #fff;
+//       opacity: 0.8;
+//       margin: 25px;
+//       padding: 5px;
+//       padding-bottom: 10px;
+
+//       flex: 1;
+//       height: 100%;
+//       min-height: 150px;
+
+//       border: 4px solid;
+//       border-radius: 10px;
+
+//       border-image-slice: 1;
+//       border-image-source: linear-gradient(
+//          to right top,
+//          #4a235a,
+//          #4a2a63,
+//          #49316d,
+//          #463876,
+//          #433f7f,
+//          #404587,
+//          #3c4c8f
+//       );
+//       // linear-gradient(
+//       //   to top,
+//       //   #1e3c72 0%,
+//       //   #1e3c72 1%,
+//       //   #2a5298 100%
+//       // );
+
+//       // border-image-source: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+//       h2 {
+//          font-size: 18px;
+//          font-weight: 600;
+//       }
+
+//       p {
+//          font-size: 14px;
+//       }
+
+//       h2,
+//       h3,
+//       p {
+//          margin: 0;
+//          padding: 0;
+//       }
+//    }
+// }
+
+// //fecha de actualización:
+// .actualizacion {
+//    margin: 40px 0;
+//    font-size: 14px;
+//    font-weight: 400;
+//    font-style: italic;
+//    text-align: center;
+//    position: relative;
+//    bottom: 60px;
+// }
+
+// //boton ver horarios completos
+// .horarios-mas {
+//    display: flex;
+//    justify-content: center;
+//    margin: auto;
+//    width: 70vw;
+//    max-width: 330px;
+//    position: relative;
+//    bottom: 20px;
+//    margin-bottom: 20px;
+
+//    text-decoration: none;
+//    text-align: center;
+
+//    cursor: pointer;
+//    // border: 2px solid $border-grey;
+//    border-radius: 10px;
+
+//    background: $primary-color-hover;
+//    //   height: 200px;
+//    //   width: 500px;
+//    padding: 10px;
+//    color: $font-light;
+//    box-shadow: 0px 1px 4px rgba(11, 110, 166, 0.65);
+
+//    transition: all 1s;
+
+//    &:hover {
+//       background: $primary-color-hover;
+//       transition: all 1s;
+//       // font-weight: bold;
+//       -webkit-box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+//       box-shadow: 3px 9px 15px -5px rgba(0, 0, 0, 0.6);
+//       color: #fff;
+
+//       // padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+
+//       &::after {
+//          opacity: 1;
+//          transition: all 0.5s;
+//       }
+//    }
+// }
+
+// @media screen and (min-width: 730px) {
+//    .home-horarios {
+//       padding: 10px;
+
+//       position: relative;
+//       bottom: 80px;
+
+//       .ant-list-items {
+//          display: flex;
+//          flex-wrap: wrap;
+//          justify-content: space-evenly;
+//       }
+
+//       .fade-in {
+//          margin: 15px;
+//       }
+
+//       &__card {
+//          margin: 0;
+//          padding: 10px 60px;
+//          width: 40vw;
+//          margin-bottom: 40px;
+//          height: 90%;
+
+//          opacity: 0.95;
+
+//          h2 {
+//             font-size: 20px;
+//             font-weight: 600;
+//          }
+
+//          p {
+//             font-size: 16px;
+//          }
+
+//          h2,
+//          h3,
+//          p {
+//             margin: 0;
+//             padding: 0;
+//          }
+//       }
+//    }
+// }
+
+// @media screen and (min-width: 1024px) {
+//    .home-horarios {
+//       padding: 10px;
+
+//       position: relative;
+//       bottom: 80px;
+
+//       .ant-list-items {
+//          display: flex;
+//          flex-wrap: wrap;
+//          justify-content: space-evenly;
+//       }
+
+//       .fade-in {
+//          margin: 20px;
+//       }
+
+//       &__card {
+//          margin: 0;
+//          padding: 10px 60px;
+//          max-width: 300px;
+//          height: 100%;
+//       }
+//    }
+// }
+
+// @media screen and (min-width: 1200px) {
+//    .home-horarios {
+//       padding: 10px 15%;
+//       bottom: 53px;
+
+//       &__card {
+//          opacity: 1;
+
+//          margin: 0;
+//          padding: 10px 60px;
+//          width: 20vw;
+//          max-width: 350px;
+//          height: 100%;
+//       }
+//    }
+// }
+
+// .actualizacion {
+//    bottom: 30px;
+// }

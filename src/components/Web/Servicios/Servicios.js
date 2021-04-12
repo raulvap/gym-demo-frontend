@@ -1,3 +1,4 @@
+//ahora son instalaciones
 import React, { useState, useEffect } from "react";
 
 // --- API ---

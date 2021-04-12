@@ -8,7 +8,7 @@ import InfoTop from "../components/Web/MenuTop/Info";
 import MainBanner from "../components/Web/MainBanner";
 import HomeHorarios from "../components/Web/HomeHorarios";
 import HomeAvisos from "../components/Web/HomeAvisos";
-import HomeSacramentos from "../components/Web/HomeSacramentos";
+import HomeServicios from "../components/Web/HomeServicios";
 import Home3 from "../components/Web/Home3";
 import HomeFb from "../components/Web/HomeFb";
 import FormContacto from "../components/Web/Contacto/FormContacto";
@@ -29,9 +29,8 @@ export default function Home(props) {
          <HomeHorarios />
          <HomeAvisos />
          <HomePosts location={location} />
-
          <HomeFb />
-         <HomeSacramentos />
+         {/* <HomeServicios /> */}
          <Home3 />
          <FormContacto />
       </>

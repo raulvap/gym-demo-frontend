@@ -65,7 +65,7 @@ export default function PostInfo(props) {
    return (
       <>
          <Helmet>
-            <title>{postInfo.title} | Eclesia</title>
+            <title>{postInfo.title} | Desarrollo29</title>
          </Helmet>
          <div className="post-info">
             <div className="post-info__image">

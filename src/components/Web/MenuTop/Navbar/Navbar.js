@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 import Burger from "./Burger";
-import Logo from "../../../../assets/img/svg/logo-color.svg";
+import Logo from "../../../../assets/img/svg/logo-blanco.svg";
 
 const Navbar = () => {
    return (
@@ -12,7 +12,7 @@ const Navbar = () => {
         
       </div> */}
          <Link to="/">
-            <img src={Logo} alt="Eclesia Logo" />
+            <img src={Logo} alt="Business_Logo" />
          </Link>
          <Burger />
          {/* </Nav> */}

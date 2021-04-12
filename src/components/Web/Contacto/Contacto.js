@@ -81,43 +81,6 @@ export default function Contacto() {
 
          {/* --- HORARIOS --- */}
          <h2>Horarios</h2>
-         <Link className="registro-link-contacto" to="/registro-misa">
-            <MdTouchApp />
-            Regístrate aqui para asistir a Misa
-         </Link>
-
-         {/* --- EN VIVO --- */}
-         <div className="home-envivo">
-            <h3>Transmisión de Misa En Vivo</h3>
-            <p>
-               Podrás seguir las transmisiones <strong>En Vivo</strong> de la Parroquia en:
-            </p>
-            <div className="home-envivo__links">
-               <a href={youtubeLink} className="home-youtube">
-                  <FaYoutube /> YouTube
-               </a>
-
-               {windowType === "large" ? (
-                  <a
-                     // href='fb://page/Parroquia-San-Fco-Javier-de-Las-Colinas-502155349977513/'
-                     href={fbLinkPage}
-                     className="home-facebook"
-                  >
-                     <FaFacebook />
-                     Facebook
-                  </a>
-               ) : (
-                  <a
-                     // href='fb://page/Parroquia-San-Fco-Javier-de-Las-Colinas-502155349977513/'
-                     href={fbLinkPageMobile}
-                     className="home-facebook"
-                  >
-                     <FaFacebook />
-                     Facebook
-                  </a>
-               )}
-            </div>
-         </div>
 
          {/* --- LISTA HORARIOS ---  */}
          <div className="contacto__horarios">
@@ -128,10 +91,6 @@ export default function Contacto() {
             <br />
             {moment(lastUpdate).format("LL")}
          </p>
-
-         {/* --- INTENCIONES Y DONATIVOS --- */}
-         <Intenciones />
-         <Donativos />
 
          {/* --- FORM DE CONTACTO --- */}
          <FormContacto />
