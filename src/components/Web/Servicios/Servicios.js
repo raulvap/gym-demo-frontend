@@ -67,7 +67,7 @@ export default function Servicios() {
 
    return (
       <div>
-         <h1 className="titulo-servicio">Servicios de la Parroquia</h1>
+         <h1 className="titulo-servicio">Conoce nuestras Instalaciones</h1>
          <div className="servicios">
             <div className="servicios__menu">
                <List

@@ -8,7 +8,7 @@ import "moment/locale/es";
 import { getHorarioApi } from "../../../api/horarios";
 
 // --- Components ---
-import FormContacto from "./FormContacto";
+import FormContacto from "../HomeForm";
 import Intenciones from "../Intenciones";
 import Donativos from "../Intenciones/Donativos";
 import { List } from "antd";
@@ -93,7 +93,7 @@ export default function Contacto() {
          </p>
 
          {/* --- FORM DE CONTACTO --- */}
-         <FormContacto />
+         <FormContacto title="Mándanos un mensaje" />
       </div>
    );
 }

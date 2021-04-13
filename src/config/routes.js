@@ -66,16 +66,17 @@ const routes = [
             exact: true,
          },
          {
+            // ahora es instalaciones
             path: "/admin/servicios",
             component: AdminServicios,
             exact: true,
          },
-         {
-            //ahora es instalaciones
-            path: "/admin/comunidades",
-            component: AdminComunidades,
-            exact: true,
-         },
+         // {
+         //    //ahora es servicios
+         //    path: "/admin/comunidades",
+         //    component: AdminComunidades,
+         //    exact: true,
+         // },
 
          {
             //eventos-clases

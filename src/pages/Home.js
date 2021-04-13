@@ -11,8 +11,9 @@ import HomeAvisos from "../components/Web/HomeAvisos";
 import HomeServicios from "../components/Web/HomeServicios";
 import Home3 from "../components/Web/Home3";
 import HomeFb from "../components/Web/HomeFb";
-import FormContacto from "../components/Web/Contacto/FormContacto";
+import HomeForm from "../components/Web/HomeForm";
 import HomePosts from "../components/Web/Blog/HomePosts";
+import HomePhotosBottom from "../components/Web/HomePhotosBottom";
 
 export default function Home(props) {
    const { location } = props;
@@ -32,7 +33,8 @@ export default function Home(props) {
          <HomeFb />
          {/* <HomeServicios /> */}
          <Home3 />
-         <FormContacto />
+         <HomeForm title="Obtén tu Daypass aquí" />
+         <HomePhotosBottom />
       </>
    );
 }

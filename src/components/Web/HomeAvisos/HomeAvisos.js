@@ -6,7 +6,7 @@ import { getAvisoApi } from "../../../api/aviso";
 // --- COMPONENTS ---
 import { Collapse, Spin, List } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
-import Image from "../../../assets/img/images/a1.png";
+import Image from "../../../assets/img/images/footer.png";
 
 import "./HomeAvisos.scss";
 

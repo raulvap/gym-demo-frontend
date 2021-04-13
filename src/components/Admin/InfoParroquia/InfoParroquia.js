@@ -64,19 +64,19 @@ export default function InfoParroquia() {
             <h3>Información de la Cuenta en Desarrollo 29</h3>
             <ul>
                <li>
-                  Parroquia: {"  "}
+                  Gimnasio: {"  "}
                   <strong>{dataParroquia}</strong>
                </li>
                <li>
-                  Número de Cuenta:{"  "} <strong>SAGCO2103</strong>
+                  Número de Cuenta:{"  "} <strong>SAGCO2105</strong>
                </li>
                <li>
-                  Contacto Principal:{"  "} <strong>p. Carlos Javier Díaz</strong>
+                  Contacto Principal:{"  "} <strong>Juan Pérez</strong>
                </li>
 
                <li>
                   Fecha de Renovación: {"  "}
-                  <strong>1/abril/2022</strong>
+                  <strong>1/mayo/2022</strong>
                </li>
             </ul>
             <p style={{ fontStyle: "italic", fontSize: "14px" }}>
@@ -101,7 +101,7 @@ export default function InfoParroquia() {
                </li>
             </ul>
          </div>
-         <div className="info-parroquia__info">
+         {/* <div className="info-parroquia__info">
             <div className="info-parroquia__colaboradores">
                <div className="card-info-header">
                   <h3>Colaboradores</h3>
@@ -138,7 +138,7 @@ export default function InfoParroquia() {
 
          <Modal title={modalTitle} isVisible={isVisibleModal} setIsVisible={setIsVisibleModal}>
             {modalContent}
-         </Modal>
+         </Modal> */}
       </div>
    );
 }

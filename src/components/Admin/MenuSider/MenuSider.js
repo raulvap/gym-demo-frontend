@@ -66,12 +66,12 @@ function MenuSider(props) {
                </Link>
             </Menu.Item>
 
-            <Menu.Item>
+            {/* <Menu.Item>
                <Link to="/admin/comunidades">
                   <SettingOutlined />
                   <span className="nac-text">Servicios</span>
                </Link>
-            </Menu.Item>
+            </Menu.Item> */}
 
             <Menu.Item>
                <Link to="/admin/servicios">
@@ -97,7 +97,7 @@ function MenuSider(props) {
             <Menu.Item>
                <Link to="/admin/info">
                   <InfoCircleOutlined />
-                  <span className="nac-text">Info Parroquia</span>
+                  <span className="nac-text">Info Cuenta D29</span>
                </Link>
             </Menu.Item>
 

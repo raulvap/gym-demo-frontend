@@ -7,7 +7,7 @@ import {
    BellOutlined,
    ClockCircleOutlined,
    SettingOutlined,
-   AppstoreOutlined,
+   AppstoreAddOutlined,
    CalendarOutlined,
    ReadOutlined,
    InfoCircleOutlined,
@@ -39,13 +39,6 @@ export default function AdminHome() {
             "Este perfil podrá hacer uso de todas las funciones de la App pero no podrá agregar, editar o eliminar usuarios",
          icon: <UserOutlined className="perfil" />,
       },
-      {
-         key: "004",
-         title: "Perfil Colaborador Externo",
-         description:
-            'Este perfil solo podrá hacer uso de las secciones de "Comunidad", "Eventos" y "Blog | Publicaciones", para poder agregar información relacionada a los Grupos Parroquiales, información de eventos próximos o crear publicaciones en el Blog ',
-         icon: <UserOutlined className="perfil" />,
-      },
 
       {
          key: "005",
@@ -63,23 +56,17 @@ export default function AdminHome() {
          key: "007",
          title: "Horarios",
          description:
-            "Aqui podrás crear los horarios de la parroquia. Los que estén activados, se mostrarán en la página de inicio",
+            "Aqui podrás crear todos los horarios del gimnasio, los cuales se mostrarán en la página de inicio",
          icon: <ClockCircleOutlined />,
       },
       {
          key: "008",
-         title: "Servicios",
-         description:
-            "Aqui podrás crear y editar los servicios de la Parroquia, separados por la sección que definas ",
-         icon: <SettingOutlined />,
-      },
-      {
-         key: "009",
          title: "Instalaciones",
          description:
-            "En esta sección, podrás crear una tarjeta para cada Grupo Parroquial, con su información de horarios y link a redes sociales",
-         icon: <AppstoreOutlined />,
+            "Aqui podrás crear y editar las instalaciones del gimnasio, separados por la sección que definas ",
+         icon: <AppstoreAddOutlined />,
       },
+
       {
          key: "010",
          title: "Eventos | Clases",
@@ -91,14 +78,13 @@ export default function AdminHome() {
          key: "011",
          title: "Blog | Publicaciones",
          description:
-            "En esta sección, publicar artículos y publicaciones. Los más recientes se publican también en la página de inicio",
+            "En esta sección, publicar artículos, noticias, información, etc. Los más recientes se publican también en la página de inicio",
          icon: <ReadOutlined />,
       },
       {
          key: "012",
          title: "Info Parroquia",
-         description:
-            "Aqui podrás editar la información de las personas colaboradoras de la Parroquia que se muestran en la sección de Comunidad. También podrás editar la información de Donativos",
+         description: "Información de la cuenta con Desarrollo29",
          icon: <InfoCircleOutlined />,
       },
    ];

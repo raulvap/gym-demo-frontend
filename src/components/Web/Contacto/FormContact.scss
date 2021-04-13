@@ -1,41 +1,41 @@
-@import "../../../scss/index.scss";
+// @import "../../../scss/index.scss";
 
-.form-message {
-  width: 100%;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 6px 15px $font-grey;
-  text-align: center;
+// .form-message {
+//   width: 100%;
+//   margin: 40px auto;
+//   padding: 20px;
+//   background-color: #fff;
+//   box-shadow: 0px 6px 15px $font-grey;
+//   text-align: center;
 
-  .ant-btn {
-    width: 95%;
-  }
-  .ant-form-item-control-input-content {
-    display: flex;
-    justify-content: center;
-  }
-}
+//   .ant-btn {
+//     width: 95%;
+//   }
+//   .ant-form-item-control-input-content {
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
 
-@media screen and (min-width: 689px) {
-  .form-message {
-    width: 60vw;
-    margin: 60px auto;
+// @media screen and (min-width: 689px) {
+//   .form-message {
+//     width: 60vw;
+//     margin: 60px auto;
 
-    .ant-form-item {
-      padding-right: 10px;
-    }
+//     .ant-form-item {
+//       padding-right: 10px;
+//     }
 
-    .ant-btn {
-      position: relative;
-      left: 20px;
-      width: 50%;
-    }
-  }
-}
+//     .ant-btn {
+//       position: relative;
+//       left: 20px;
+//       width: 50%;
+//     }
+//   }
+// }
 
-@media screen and (min-width: 969px) {
-  .form-message {
-    width: 50vw;
-  }
-}
+// @media screen and (min-width: 969px) {
+//   .form-message {
+//     width: 50vw;
+//   }
+// }

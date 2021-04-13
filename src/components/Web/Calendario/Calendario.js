@@ -11,30 +11,16 @@ import { List, Spin } from "antd";
 import { LoadingOutlined } from "@ant-design/icons";
 import { MdSchedule, MdLocationOn, MdTouchApp } from "react-icons/md";
 import { BsQuestionCircle } from "react-icons/bs";
-import { makeStyles } from "@material-ui/core/styles";
 import { EventosDescription } from "../../../utils/dataVariables";
 
-import Cover from "../../../assets/img/jpg/web-cover-home.jpg";
-import AlternativeImage from "../../../assets/img/jpg/alternative2.jpg";
+import CoverImg from "../../../assets/img/images/services.jpg";
+import AlternativeImage from "../../../assets/img/images/gallery_4.jpg";
 
 import "./Calendario.scss";
-
-const useStyles = makeStyles({
-   image: {
-      backgroundImage: `url(${Cover})`,
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      opacity: "0.95",
-      border: 0,
-      height: "100%",
-   },
-});
 
 export default function Calendario() {
    const [calendario, setCalendarios] = useState([]);
    const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
-   const classes = useStyles();
 
    useEffect(() => {
       getCalendarioApi().then((response) => {
@@ -61,21 +47,24 @@ export default function Calendario() {
    }
 
    return (
-      <>
-         <div className="cover">
-            <div className={classes.image}></div>
+      <div className="eventos-page-component">
+         <div className="eventos-header">
+            <div className="background_image" style={{ backgroundImage: `url(${CoverImg})` }} />
+            <div className="overlay" />
+
+            <div className="eventos-title">
+               <h2>Calendario de Eventos</h2>
+               <p>{EventosDescription}</p>
+            </div>
          </div>
-
-         <h2 style={{ textAlign: "center" }}>Calendario de Eventos</h2>
-
-         <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-            <p className="subtitulo">{EventosDescription}</p>
-         </ScrollAnimation>
 
          <div className="calendario">
-            <List dataSource={calendario} renderItem={(item) => <Evento item={item} />} />
+            <List
+               dataSource={calendario}
+               renderItem={(item) => <Evento key={item._id} item={item} />}
+            />
          </div>
-      </>
+      </div>
    );
 }
 
@@ -96,8 +85,9 @@ function Evento(props) {
    return (
       <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
          <div className="calendario__evento">
-            <img src={item.url} alt={item.title} />
-            <div className="info">
+            <div className="evento-image" style={{ backgroundImage: `url(${item.url})` }} />
+
+            <div className="evento-info">
                <div className="date">
                   <span>{`${day} ${month} ${year}`}</span>
                </div>

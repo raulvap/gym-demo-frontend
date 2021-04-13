@@ -1,60 +1,71 @@
 @import "../../../scss/index.scss";
 
 .login-form {
-  .ant-form-item:last-of-type {
-    margin: 0;
-  }
+   .ant-form-item:last-of-type {
+      margin: 0;
+   }
 
-  &__input {
-    .ant-input-prefix {
-      i {
-        form-size: 0em + 22px / $defaultFontSize;
+   &__input {
+      .ant-input-prefix {
+         i {
+            form-size: 0em + 22px / $defaultFontSize;
+         }
       }
-    }
 
-    input {
-      font-size: 0em + 20px / $defaultFontSize;
-      padding: 5px 5px 0px 10px !important;
-      color: $font-grey-dark;
-      &:focus {
-        border-color: $primary-color;
-        box-shadow: none;
+      input {
+         font-size: 0em + 20px / $defaultFontSize;
+         padding: 5px 5px 0px 10px !important;
+         color: $font-grey-dark;
+         &:focus {
+            border-color: $primary-color !important;
+            box-shadow: none;
+         }
       }
-    }
-  }
+   }
 
-  &__reset {
-    border: none;
-    background: transparent;
-    color: $primary-color-hover;
-    cursor: pointer;
-    outline: none;
-
-    button:focus {
+   &__reset {
       border: none;
+      background: transparent;
+      color: $font-grey-dark;
+      cursor: pointer;
       outline: none;
-    }
-  }
+      transition: all 0.2s ease;
 
-  &__button {
-    width: 100%;
-    font-size: 0em + 22px / $defaultFontSize;
-    background-color: $primary-color-hover;
-    color: $font-light;
-    height: 42px;
-    margin-bottom: 15px;
-    border-radius: 10px;
+      button:focus {
+         border: none;
+         outline: none;
+      }
 
-    &:hover {
-      background-color: $primary-color-hover;
+      &:hover {
+         font-weight: bold;
+         transition: all 0.3s ease;
+      }
+   }
+
+   &__button {
+      width: 100%;
+      font-size: 0em + 22px / $defaultFontSize;
+      background-color: $color-6;
+      border: 1px solid $color-6;
       color: $font-light;
-      box-shadow: 0px 6px 15px $font-grey;
-    }
-    &:focus,
-    &:active {
-      background-color: $primary-color-hover;
-      color: $font-light;
-      border: 0;
-    }
-  }
+      height: 42px;
+      margin-bottom: 15px;
+      transition: all 0.6s ease;
+
+      &:hover {
+         background-color: $primary-color-hover;
+         color: $color-6;
+         border: 1px solid $color-6;
+         font-weight: bold;
+         box-shadow: 0px 6px 15px $font-grey;
+         transition: all 0.6s ease;
+      }
+      &:focus,
+      &:active {
+         background-color: $primary-color-hover;
+         color: $color-6;
+         border: 1px solid $color-6;
+         font-weight: bold;
+      }
+   }
 }
